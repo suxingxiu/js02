@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // 1.弹出输入框,四种选项,保存数据
+        var save = prompt('请输入您要进行的操作: \n 1.存钱 \n 2.取钱 \n 3.显示余额 \n 4.退出')
+            // 2.进行判断
+        switch (save) {
+            case '1':
+                var zong = prompt('请输入您要存的金额: ');
+                var sum = 100 + parseFloat(zong);
+                alert('您的总额是: ' + sum);
+                break;
+            case '2':
+                var qu = prompt('你要取多少钱: ');
+                alert('你这次取了' + qu + '钱');
+                break;
+            case '3':
+                alert('您的余额是:100 ');
+            case '4':
+                break;
+            default:
+                alert('请输入正确的选项');
+        }
+        // 3.输出结果
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

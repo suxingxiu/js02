@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        /*         // 先写内层,一行有多少个数
+                                                                                        var str = '';
+                                                                                        //    再写外层,行数
+                                                                                        for (var i = 1; i <= 9; i++) {
+                                                                                            for (var j = i; j <= 9; j++) {
+                                                                                                str = str + i + 'x' + j + '=' + i * j + '\t';
+                                                                                            }
+                                                                                            str += '\n';
+                                                                                        }
+                                                                                        console.log(str); */
+
+        // 倒乘法口诀表
+
+        // 2.再写外层
+        // 定义空字符变量进行一行内每列数据的拼接
+        var str = ''
+        for (var i = 1; i <= 9; i++) {
+            // 1.先写内层
+            for (var j = i; j <= 9; j++) {
+                str = str + i + 'x' + j + '=' + i * j + '\t';
+            }
+            str = str + '\n';
+        }
+        console.log(str);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
